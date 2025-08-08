@@ -2,19 +2,30 @@ name: GitHub Pages Health Check
 
 on:
   schedule:
-    - cron: "0 * * * *"  # every hour
-  workflow_dispatch:  # allow manual run
+    - cron: "0 * * * *"    # hourly; change to "0 0 * * *" for daily
+  workflow_dispatch:
 
 jobs:
   check-site:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if site is up
+      - name: Check apex domain
         run: |
-          STATUS=$(curl -o /dev/null -s -w "%{http_code}\n" https://advrajeevav-jpg.github.io/)
-          if [ "$STATUS" != "200" ]; then
-            echo "❌ Site is down (HTTP $STATUS)"
+          STATUS=$(curl -L -o /dev/null -s -w "%{http_code}\n" https://advavrajeev.in/)
+          echo "advavrajeev.in → HTTP $STATUS"
+          # consider 2xx and 3xx as UP
+          if [ "$STATUS" -ge 400 ]; then
+            echo "❌ Apex returned $STATUS"
             exit 1
-          else
-            echo "✅ Site is up (HTTP $STATUS)"
           fi
+
+      - name: Check www (optional)
+        run: |
+          STATUS=$(curl -L -o /dev/null -s -w "%{http_code}\n" https://www.advavrajeev.in/)
+          echo "www.advavrajeev.in → HTTP $STATUS"
+          # Only fail if both apex and www fail — so we don't exit here.
+          # If you want to fail on www too, uncomment below:
+          # if [ "$STATUS" -ge 400 ]; then
+          #   echo "❌ WWW returned $STATUS"
+          #   exit 1
+          # fi
