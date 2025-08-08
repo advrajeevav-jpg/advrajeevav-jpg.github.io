@@ -129,5 +129,22 @@
 
     showPage(1);
   </script>
+
+    <script>
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+</script>
+
+  <script>
+  document.addEventListener('touchstart', function preventLongPress(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  }, { passive: false });
+</script>
+  
 </body>
 </html>
