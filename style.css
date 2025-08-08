@@ -1,0 +1,293 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.hero-section {
+  background-color: #152c4e;
+  color: #ffffff;
+  padding: 4rem 1rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero-photo img {
+  width: 180px;
+  border-radius: 8px;
+}
+
+.hero-name h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-right h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.yellow-btn,
+.contact-buttons a.contact-btn {
+  background-color: #f9b233;
+  color: #0d1b2a;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.yellow-btn:hover,
+.contact-buttons a.contact-btn:hover {
+  background-color: #e09f1f;
+  transform: translateY(-2px);
+}
+
+nav {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 1rem 0;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+
+.tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted #000;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 260px;
+  background-color: #0d1b2a;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -130px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tile {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#about.section {
+  background-color: #ffffff;
+}
+
+#contact.section {
+  background-color: #152c4e;
+  color: #ffffff;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #f9b233;
+}
+
+#contact p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact-buttons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* KNOW YOUR RIGHTS PAGE DESIGN */
+
+/* Consistent header bar for Know Your Rights pages */
+.simple-header {
+  background-color: #152c4e;
+  color: #ffffff;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+.simple-header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.rights-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 0.75rem 1rem;
+  gap: 1rem;
+}
+
+.rights-nav a {
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  color: #152c4e;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid #152c4e;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rights-nav a:hover {
+  background-color: #152c4e;
+  color: #ffffff;
+}
+
+.rights-nav a.active {
+  background-color: #f9b233;
+  border-color: #f9b233;
+  color: #152c4e;
+  pointer-events: none;
+}
+
+/* Section container on Rights pages */
+section.section {
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+  padding: 4rem 1.5rem;
+}
+
+section.section h2 {
+  color: #152c4e;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+section.section h3 {
+  color: #0d1b2a;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+section.section ul {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+section.section ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+section.section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* Footer style reused */
+footer a {
+  color: #152c4e;
+  text-decoration: underline;
+}
+
+.rights-nav {
+  background-color: #f8f9fb;
+  padding: 1rem 2rem;
+  border-radius: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin: 1.5rem auto;
+  max-width: 96%;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* Mobile responsiveness for nav bar */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+
+
+
