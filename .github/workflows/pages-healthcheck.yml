@@ -1,0 +1,20 @@
+name: GitHub Pages Health Check
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # every hour
+  workflow_dispatch:  # allow manual run
+
+jobs:
+  check-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if site is up
+        run: |
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}\n" https://advrajeevav-jpg.github.io/)
+          if [ "$STATUS" != "200" ]; then
+            echo "❌ Site is down (HTTP $STATUS)"
+            exit 1
+          else
+            echo "✅ Site is up (HTTP $STATUS)"
+          fi
