@@ -46,6 +46,15 @@
     color: #fff;
 }
 
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.nav-toggle {
+    display: none;
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--color-bg-white);
@@ -147,4 +156,82 @@
 
 .footer a:hover {
     color: var(--color-accent);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-container {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Three-dot Toggle Button */
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1001;
+    }
+
+    .nav-toggle .dot {
+        width: 6px;
+        height: 6px;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    /* Mobile Menu */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid var(--color-border);
+        text-align: center;
+        gap: 1.5rem;
+        z-index: 1000;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
