@@ -1,81 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Know Your Rights – Family Law Matters in India | Advocate A V Rajeev</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Law & Matrimonial Matters | Advocate A V Rajeev</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .toc {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--color-accent);
+      margin-bottom: 2rem;
+    }
+
+    .toc h4 {
+      margin-top: 0;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 0.5rem;
+    }
+
+    .toc a {
+      font-size: 0.95rem;
+      color: var(--color-primary);
+    }
+
+    .step-card {
+      background: #fff;
+      padding: 1.5rem;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .step-number {
+      background: var(--color-primary);
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+  </style>
 </head>
+
 <body>
-  <header class="simple-header">
-    <h1>Family Law Rights in India</h1>
-    <nav class="rights-nav">
-      <a href="index.html" class="btn yellow-btn">🏠 Home</a>
-      <a href="mact-rights.html">MACT</a>
-      <a href="insurance-rights.html">Insurance</a>
-      <a href="labour-rights.html">Labour</a>
-      <a href="consumer-rights.html">Consumer</a>
-      <a href="land-rights.html">Land</a>
-      <a href="family-rights.html" class="active">Family</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Adv. A V Rajeev</a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#practice-areas">Practice Areas</a>
+        <a href="practice-areas.html">Legal Knowledge Hub</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.85rem;">Consult</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding: 4rem 0; background: var(--color-primary);">
+    <div class="container">
+      <p style="color: var(--color-accent); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Legal
+        Knowledge Hub</p>
+      <h1 style="color: #fff; margin-bottom: 1rem;">Family & Matrimonial Law</h1>
+      <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; max-width: 700px;">
+        Handling sensitive personal disputes with dignity. Divorce, Maintenance, Child Custody, and Domestic Violence
+        defense.
+      </p>
+    </div>
   </header>
 
-  <section class="section">
-    <div class="container">
-      <h2>Your Legal Rights in Family Matters</h2>
-      <p>Indian family law governs marriage, divorce, child custody, maintenance, and domestic abuse. Different communities may have separate personal laws, but your constitutional rights are universal.</p>
+  <div class="container section">
+    <div class="grid" style="grid-template-columns: 250px 1fr; gap: 3rem;">
 
-      <h3>1. Rights in Marriage & Divorce</h3>
-      <ul>
-        <li><strong>Hindu Marriage Act, 1955:</strong> Governs Hindus. Allows divorce for cruelty, adultery, desertion, etc.</li>
-        <li><strong>Dissolution of Muslim Marriages Act, 1939:</strong> Allows Muslim women to seek divorce on valid grounds like neglect, cruelty, or absence.</li>
-        <li><strong>Indian Divorce Act, 1869:</strong> For Christians, regulates divorce and judicial separation.</li>
-        <li><strong>Special Marriage Act, 1954:</strong> For interfaith/non-religious marriages. Civil procedures apply.</li>
-      </ul>
+      <!-- Sidebar / Table of Contents -->
+      <aside>
+        <div class="toc" style="position: sticky; top: 100px;">
+          <h4>Contents</h4>
+          <ul>
+            <li><a href="#family-rights">Your Rights (Property/Custody)</a></li>
+            <li><a href="#divorce">Divorce Proceedings</a></li>
+            <li><a href="#maintenance">Maintenance</a></li>
+            <li><a href="#dv">Domestic Violence</a></li>
+            <li><a href="#judgments">Landmark Judgments</a></li>
+            <li><a href="#process">Court Procedures</a></li>
+            <li><a href="#counseling">Counseling</a></li>
+          </ul>
+        </div>
+      </aside>
 
-      <h3>2. Right to Maintenance</h3>
-      <ul>
-        <li><strong>Section 125, CrPC:</strong> Wife, children, and parents can claim maintenance regardless of religion.</li>
-        <li><strong>Hindu Adoption and Maintenance Act, 1956:</strong> Provides for lifetime maintenance post-divorce.</li>
-        <li><strong>Muslim Women (Protection of Rights on Divorce) Act, 1986:</strong> Maintenance beyond iddat, if needed.</li>
-      </ul>
+      <!-- Main Content -->
+      <article>
 
-      <h3>3. Child Custody & Guardianship</h3>
-      <ul>
-        <li><strong>Guardians and Wards Act, 1890:</strong> Applies across religions. Courts decide custody based on child’s welfare, not just parental claims.</li>
-        <li>Courts may grant sole, joint, or visitation custody.</li>
-      </ul>
+        <!-- Statutory Basis Block -->
+        <div
+          style="background: #fdf8e4; padding: 1.5rem; border-left: 4px solid #bf9b30; margin-bottom: 2rem; border-radius: 4px;">
+          <h3 style="color: #bf9b30; margin-top: 0; font-size: 1.1rem;">Statutory Basis</h3>
+          <p style="margin-bottom: 0.5rem;"><strong>Primary Acts:</strong> Hindu Marriage Act, 1955 | Section 125 CrPC
+          </p>
+          <p style="margin-bottom: 0;"><strong>Key Sections:</strong> Sec 13B (Mutual Consent), Sec 9 (RCR), DV Act
+            2005.</p>
+        </div>
 
-      <h3>4. Domestic Violence Protection</h3>
-      <ul>
-        <li><strong>Protection of Women from Domestic Violence Act, 2005 (PWDVA):</strong> Protects women against physical, verbal, emotional, and economic abuse.</li>
-        <li>Includes wives, live-in partners, daughters-in-law, mothers, etc.</li>
-        <li>Protection officers and courts can issue urgent relief and restraining orders.</li>
-      </ul>
+        <section id="family-rights" style="margin-bottom: 3rem;">
+          <h3>Your Rights in Family Matters</h3>
+          <p>Family law is not just about divorce. It safeguards your rights to property, dignity, and children.</p>
 
-      <h3>5. Property Rights</h3>
-      <ul>
-        <li><strong>Hindu Succession (Amendment) Act, 2005:</strong> Daughters have equal rights in ancestral property.</li>
-        <li>Under PWDVA, a woman has the right to reside in her matrimonial home even if she doesn't own it.</li>
-      </ul>
+          <div class="grid grid-2" style="gap: 1.5rem; margin-top: 1rem;">
+            <!-- Property Rights -->
+            <div style="background: #fff; border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 8px;">
+              <h4 style="margin-top: 0; color: #bf9b30;">Property Rights</h4>
+              <ul style="padding-left: 1.5rem; font-size: 0.95rem; line-height: 1.6;">
+                <li><strong>Daughters:</strong> Have equal right to ancestral property by birth (Hindu Succession
+                  Amendment Act, 2005).</li>
+                <li><strong>Wives:</strong> Right to reside in the matrimonial home under DV Act, even if she doesn't
+                  own it.</li>
+                <li><strong>Stridhan:</strong> A woman has absolute ownership over gifts/gold received during marriage.
+                </li>
+              </ul>
+            </div>
 
-      <h3>6. How to Enforce These Rights</h3>
-      <ul>
-        <li><strong>Family Courts:</strong> Handle divorce, maintenance, and custody cases.</li>
-        <li><strong>Magistrate Courts:</strong> Handle domestic violence cases under PWDVA.</li>
-        <li><strong>High Court/Supreme Court:</strong> For writ petitions and appeals if rights are denied.</li>
-      </ul>
+            <!-- Child Custody -->
+            <div style="background: #fff; border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 8px;">
+              <h4 style="margin-top: 0; color: #bf9b30;">Child Custody & Guardianship</h4>
+              <ul style="padding-left: 1.5rem; font-size: 0.95rem; line-height: 1.6;">
+                <li><strong>Welfare Principle:</strong> The child's welfare is the ONLY paramount consideration for
+                  courts, not parental ego.</li>
+                <li><strong>Natural Guardian:</strong> Under Hindu law, father is natural guardian, but custody of child
+                  under 5 usually goes to mother.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-      <h3>7. Legal Help</h3>
-      <p>Family disputes are emotionally challenging. Having a sensitive and experienced lawyer helps you assert your rights while maintaining dignity and peace. </p>
+        <section id="divorce" style="margin-bottom: 3rem;">
+          <h2>Divorce Proceedings (Hindu Marriage Act)</h2>
+
+          <div class="step-card">
+            <h4>1. Mutual Consent (Section 13B)</h4>
+            <p>The fastest way to separate. Both parties file a joint petition.</p>
+            <ul style="padding-left: 1.5rem;">
+              <li><strong>Cooling Off:</strong> Mandatary 6 months wait (can be waived by Supreme Court discretion under
+                Article 142).</li>
+              <li><strong>Terms:</strong> Alimony and Child Custody are pre-agreed.</li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <h4>2. Contested Divorce (Section 13)</h4>
+            <p>Grounds include Cruelty (Mental/Physical), Desertion (2+ years), Adultery, Conversion, or Unsoundness of
+              mind.</p>
+          </div>
+        </section>
+
+        <section id="restitution" style="margin-bottom: 3rem;">
+          <h3>Restitution of Conjugal Rights (Section 9)</h3>
+          <p>If a spouse leaves the matrimonial home without reasonable excuse, the other can file for RCR. While the
+            court can decree restitution, compliance cannot be forced physically, but non-compliance for 1 year is a
+            ground for divorce.</p>
+        </section>
+
+        <section id="maintenance" style="margin-bottom: 3rem;">
+          <h3>Maintenance & Alimony</h3>
+          <p>
+            Under <strong>Section 125 of CrPC</strong> (Criminal Procedure Code), a wife, children, and aged parents
+            unable to maintain themselves can claim maintenance from the husband/son.
+          </p>
+          <div style="background: #fff; padding: 1.5rem; border: 1px solid var(--color-border); border-radius: 8px;">
+            <p><strong>Rajnesh vs. Neha (2020) Guidelines:</strong></p>
+            <p>The Supreme Court mandated that both parties must file an <strong>Affidavit of Assets and
+                Liabilities</strong>. Maintenance is decided based on status of living, reasonable needs, and inflation.
+            </p>
+          </div>
+        </section>
+
+        <section id="dv" style="margin-bottom: 3rem;">
+          <h3>Domestic Violence Act, 2005</h3>
+          <p>A fast-track law to protect women in domestic relationships. Reliefs include:</p>
+          <ul style="padding-left: 1.5rem;">
+            <li><strong>Protection Order:</strong> Restrain abuser from entering workplace/home.</li>
+            <li><strong>Residence Order:</strong> Right to reside in the shared household.</li>
+            <li><strong>Monetary Relief:</strong> Medical expenses and loss of earnings.</li>
+          </ul>
+        </section>
+
+        <section id="judgments" style="margin-bottom: 3rem;">
+          <h3>10 Landmark Supreme Court Judgments</h3>
+          <div class="grid grid-2" style="gap: 1.5rem;">
+
+            <!-- Shah Bano -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>1. Secular Maintenance</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Mohd. Ahmed Khan vs. Shah Bano Begum (1985)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Established that Section 125 CrPC (Maintenance) applies
+                to all women regardless of religion, including Muslim women.</p>
+            </div>
+
+            <!-- Triple Talaq -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>2. Triple Talaq Unconstitutional</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Shayara Bano vs. Union of India (2017)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Declared the practice of instant 'Triple Talaq' as
+                unconstitutional and void, protecting Muslim women's marital rights.</p>
+            </div>
+
+            <!-- Daughters Coparcenary -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>3. Daughters Equal to Sons</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Vineeta Sharma vs. Rakesh Sharma (2020)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Clarified that daughters have coparcenary rights in
+                ancestral property by birth, even if the father died before 2005.</p>
+            </div>
+
+            <!-- Maintenance Guidelines -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>4. Maintenance Guidelines</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Rajnesh vs. Neha (2020)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Mandated filing of 'Affidavit of Assets' by both parties
+                to determine fair maintenance based on real income and lifestyle.</p>
+            </div>
+
+            <!-- Live-in Relationships -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>5. Live-in Relationships</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Velusamy vs. D. Patchaiammal (2010)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Recognized 'relationship in the nature of marriage'
+                (Live-in) as covered under DV Act for maintenance and protection.</p>
+            </div>
+
+            <!-- Inter-caste Marriage -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>6. Right to Choose Partner</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Lata Singh vs. State of UP (2006)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Upheld the right of adults to marry a person of their
+                choice inter-caste/inter-religion. Police must protect such couples.</p>
+            </div>
+
+            <!-- Irretrievable Breakdown -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>7. Irretrievable Breakdown</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Shilpa Sailesh vs. Varun Sreenivasan (2023)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Supreme Court can use Art 142 powers to grant divorce on
+                ground of 'irretrievable breakdown' without waiting for 6 months.</p>
+            </div>
+
+            <!-- Christian Divorce -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>8. Christian Divorce Period</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Ammini E.J. vs. Union of India (1995)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Struck down the 2-year separation requirement for
+                Christian divorce under Section 10A of the Divorce Act, making it 1 year.</p>
+            </div>
+
+            <!-- Stridhan -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>9. Stridhan Ownership</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Pratibha Rani vs. Suraj Kumar (1985)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">Husband/in-laws are merely trustees of Stridhan. Refusal
+                to return it amounts to Criminal Breach of Trust (Sec 406 IPC).</p>
+            </div>
+
+            <!--  Shared Household -->
+            <div style="border-left: 4px solid var(--color-primary); padding-left: 1rem;">
+              <strong>10. Right to Residence</strong><br>
+              <em style="color: #666; font-size: 0.9rem;">Satish Chander Ahuja vs. Sneha Ahuja (2020)</em>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem;">'Shared Household' under DV Act includes the house owned
+                by in-laws where the daughter-in-law lived.</p>
+            </div>
+
+          </div>
+
+          <section id="process" style="margin-bottom: 3rem;">
+            <h3>Family Court Procedures</h3>
+            <ul style="padding-left: 1.5rem; line-height: 1.8;">
+              <li><strong>Counseling:</strong> Mandatory step in most Family Court cases to explore reconciliation.</li>
+              <li><strong>In-Camera Proceedings:</strong> Cases can be heard privately to protect privacy.</li>
+              <li><strong>Child Custody:</strong> "Welfare of the Child" is the paramount consideration, not just the
+                rights of parents.</li>
+            </ul>
+          </section>
+
+          <div
+            style="background: #fdf8e4; padding: 2rem; border-radius: 8px; border: 1px solid #f9b233; text-align: center;">
+            <h3 style="color: #bf9b30; margin-bottom: 1rem;">Confidential Consultation</h3>
+            <p style="margin-bottom: 1.5rem;">Matrimonial issues require privacy and empathy. Schedule a private
+              consultation to understand your legal options.</p>
+            <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+          </div>
+
+      </article>
     </div>
-  </section>
+  </div>
 
-  <footer style="text-align:center; padding:1rem; background:#f4f4f4; font-size:0.9rem;">
-    © 2025 Advocate A V Rajeev. All rights reserved. &nbsp;|
-    <a href="index.html#contact">Contact</a>
+  <footer class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <h3 style="color: #fff;">Adv. A V Rajeev</h3>
+        <p style="font-size: 0.9rem;">Providing ethical and effective legal representation since 1993.</p>
+      </div>
+      <div>
+        <h3 style="font-size: 1rem; color: var(--color-accent);">Quick Links</h3>
+        <a href="gallery.html">Chamber Gallery</a>
+        <a href="mact-rights.html">MACT Claims</a>
+        <a href="consumer-rights.html">Consumer Rights</a>
+        <a href="insurance-rights.html">Insurance Disputes</a>
+        <a href="land-rights.html">Land & Property</a>
+        <a href="labour-rights.html">Labour Rights</a>
+        <a href="family-rights.html">Family Law</a>
+      </div>
+      <div>
+        <h3 style="font-size: 1rem; color: var(--color-accent);">Compliance</h3>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="disclaimer.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="text-center"
+      style="margin-top: 2rem; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+      &copy; 2025 Advocate A V Rajeev. All Rights Reserved.
+    </div>
   </footer>
-</body>
-</html>
 
+</body>
+
+</html>

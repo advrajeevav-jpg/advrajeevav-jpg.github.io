@@ -1,108 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery – Newspaper Features | Advocate A V Rajeev</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Life in Law - Gallery | Advocate A V Rajeev</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
   <style>
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
     }
 
     .gallery-tile {
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border-radius: 6px;
       padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease;
+      border: 1px solid var(--color-border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .gallery-tile:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-accent);
     }
 
     .gallery-tile img {
-      max-width: 100%;
-      max-height: 400px;
-      object-fit: contain;
-      border-radius: 8px;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 4px;
       display: block;
-      margin: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Lightbox-like framing */
+    .gallery-tile img.contain {
+      object-fit: contain;
+      background: #f9f9f9;
     }
 
     .caption {
       font-size: 0.9rem;
       margin-top: 0.5rem;
-      color: #444;
+      color: var(--color-text-light);
+      text-align: center;
+      font-style: italic;
     }
 
     .pagination {
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
     }
 
     .pagination button {
-      padding: 8px 12px;
-      margin: 0 4px;
-      background-color: #0366d6;
-      color: white;
-      border: none;
+      padding: 8px 16px;
+      background-color: #fff;
+      color: var(--color-primary);
+      border: 1px solid var(--color-border);
       border-radius: 4px;
       cursor: pointer;
+      font-family: var(--font-body);
+      font-weight: 500;
+      transition: all 0.2s;
     }
 
     .pagination button.active {
-      background-color: #004a99;
+      background-color: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
     }
 
-    .pagination button:hover {
-      background-color: #005bb5;
+    .pagination button:hover:not(.active) {
+      background-color: #f0f0f0;
+      border-color: var(--color-primary);
     }
   </style>
 </head>
 
 <body>
-  <header class="hero-section">
-    <div class="container">
-      <h1 class="name">Newspaper Features</h1>
-      <p class="designation">A collection of published mentions, interviews & recognitions</p>
-      <a href="index.html" class="btn yellow-btn">← Back to Home</a>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Adv. A V Rajeev</a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#practice-areas">Practice Areas</a>
+        <a href="practice-areas.html">Legal Knowledge Hub</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.85rem;">Consult</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" style="padding: 4rem 0;">
+    <div class="container text-center">
+      <p style="color: var(--color-accent); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Chamber
+        Moments</p>
+      <h1 class="name" style="margin-bottom: 1rem;">Life in Law</h1>
+      <p class="designation" style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">
+        A curation of newspaper features, professional recognitions, and moments from 31 years of legal practice.
+      </p>
     </div>
   </header>
 
   <section class="section">
     <div class="container">
-      <div class="tiles-grid gallery-grid" id="gallery"></div>
-      <div class="pagination" id="pagination"></div>
+      <div class="tiles-grid gallery-grid" id="gallery">
+        <!-- Gallery items will be injected here -->
+      </div>
+      <div class="pagination" id="pagination">
+        <!-- Pagination buttons -->
+      </div>
     </div>
   </section>
 
-  <footer style="text-align:center; padding:1rem; background:#f4f4f4; font-size:0.9rem;">
-    © 2025 Advocate A V Rajeev. All rights reserved.
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <h3 style="color: #fff;">Adv. A V Rajeev</h3>
+        <p style="font-size: 0.9rem;">Providing ethical and effective legal representation since 1993.</p>
+      </div>
+      <div>
+        <h3 style="font-size: 1rem; color: var(--color-accent);">Quick Links</h3>
+        <a href="gallery.html">Chamber Gallery</a>
+        <a href="mact-rights.html">MACT Claims Process</a>
+        <a href="consumer-rights.html">Consumer Rights</a>
+        <a href="labour-rights.html">Workers Compensation</a>
+      </div>
+      <div>
+        <h3 style="font-size: 1rem; color: var(--color-accent);">Compliance</h3>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="disclaimer.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="text-center"
+      style="margin-top: 2rem; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+      &copy; 2025 Advocate A V Rajeev. All Rights Reserved.
+    </div>
   </footer>
 
   <script>
     const gallery = document.getElementById('gallery');
     const pagination = document.getElementById('pagination');
     const totalImages = 25; // Update this number when new images are added
-    const itemsPerPage = 6;
+    const itemsPerPage = 9; // Increased items per page for better view on desktop
     let currentPage = 1;
 
     const images = [];
 
     for (let i = totalImages; i >= 1; i--) {
       const imgNum = String(i).padStart(2, '0');
+      // Using .webp as seen in previous file
       images.push(`
-        <div class="tile gallery-tile" data-index="${i}">
-          <img src="gallery/news_${imgNum}.webp" loading="lazy" alt="Newspaper clipping ${i}" />
-          <p class="caption"></p>
+        <div class="gallery-tile" data-index="${i}">
+          <img src="gallery/news_${imgNum}.webp" loading="lazy" class="contain" alt="Newspaper clipping from the archives" />
+          <p class="caption">Archive Reference #${i}</p>
         </div>
       `);
     }
@@ -113,6 +177,7 @@
       const end = start + itemsPerPage;
       gallery.innerHTML = images.slice(start, end).join('');
       updatePagination();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function updatePagination() {
@@ -130,21 +195,21 @@
     showPage(1);
   </script>
 
-    <script>
-  document.addEventListener('contextmenu', function (e) {
-    if (e.target.tagName === 'IMG') {
-      e.preventDefault();
-    }
-  });
-</script>
-
   <script>
-  document.addEventListener('touchstart', function preventLongPress(e) {
-    if (e.target.tagName === 'IMG') {
-      e.preventDefault();
-    }
-  }, { passive: false });
-</script>
-  
+    // Disable right click on images for basic protection (Client request in previous iterations usually implies this for legal docs)
+    document.addEventListener('contextmenu', function (e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    });
+
+    document.addEventListener('touchstart', function preventLongPress(e) {
+      if (e.target.tagName === 'IMG') {
+        // e.preventDefault(); // Commenting out to allow scrolling on mobile easily
+      }
+    }, { passive: false });
+  </script>
+
 </body>
+
 </html>
