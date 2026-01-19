@@ -195,8 +195,14 @@
   </script>
 
   <script>
-    // Disable right click on images for basic protection (Client request in previous iterations usually implies this for legal docs)
+    // Disable right click and drag on images for basic protection
     document.addEventListener('contextmenu', function (e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    });
+
+    document.addEventListener('dragstart', function (e) {
       if (e.target.tagName === 'IMG') {
         e.preventDefault();
       }
