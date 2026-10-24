@@ -1,0 +1,34 @@
+# Allow-list: only the files the published website needs are tracked.
+# Everything else (agent/AI tool files, notes, Markdown, editor and OS files) is ignored.
+/*
+
+!/.gitignore
+!/.nojekyll
+!/CNAME
+!/LICENSE.txt
+!/robots.txt
+!/sitemap.xml
+!/favicon.ico
+!/*.html
+!/rajeev-photo.jpg
+!/rajeev-photo.webp
+!/css/
+!/js/
+!/.github/
+
+# Never track Markdown or agent/AI tool files, even inside allowed folders
+*.md
+.claude/
+.serena/
+.cursor/
+.codex/
+.gemini/
+.windsurf/
+.aider*
+.continue/
+.copilot/
+.github/copilot-instructions.md
+.github/instructions/
+.github/prompts/
+.github/agents/
+.github/chatmodes/
